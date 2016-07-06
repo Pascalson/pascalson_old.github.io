@@ -14,11 +14,11 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Pascalson blog</a>
+      <a class="navbar-brand" href="index.html">Pascalson blog</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="notes.html">Notes</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Notes</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="#">Profile</a></li>
     </ul>
@@ -29,20 +29,24 @@
 </nav>
 <div class="container">
   <h3>Fixed Navbar</h3>
-  <div id="content">
-  <h1>Pascalson blog</h1>
-  <blockquote>
-    <p>你不需要很厲害，才能開始；但你需要開始，才會很厲害</p>
-	<footer>From facebook</footer>
-  </blockquote>
+  <div class="row">
+    <div class="col-sm-12">
+	  <h3><a href="notes/Jul05_2016.html">About vector representation of words</a></h3>
+      <p>Jul 05, 2016</p>
+	</div>
+    <div class="col-sm-12">
+	  <h3><a href="notes/Jun30_2016.html">Install cuda-7.5 on Ubuntu-16.04</a></h3>
+      <p>Jun 30, 2016</p>
+	</div>
+    <div class="col-sm-12">
+	  <h3><a href="#">Install Theano on Windows-8.1</a></h3>
+      <p>Jun 30, 2016</p>
+	</div>
+    <div class="col-sm-12">
+	  <h3><a href="#">Install Kaldi on Ubuntu-16.04</a></h3>
+      <p>Jun 30, 2016</p>
+	</div>
   </div>
 </div>
-<script>
-  function load_inst()
-  {
-    document.getElementById("content").innerHTML='<object type="text/html" data="notes/Jun06_2016.html" ></object>';
-  }
-</script>
 </body>
-
-</html> 
+</html>
