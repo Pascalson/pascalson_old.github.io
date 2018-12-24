@@ -20,6 +20,7 @@
 <link rel="stylesheet" media="screen and (min-width:481px)" href="Assets/cv.css">
 <link rel="stylesheet" media="print" href="Assets/print.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 </head>
 
 <body>
@@ -27,10 +28,11 @@
 	<!-- Header -->
 	<header role="banner">
 		<div class="container_16">
-				<hgroup>
+		  <hgroup>
           <h1>Yi-Lin Tuan</h1>
-					<h2>Research Assistant, National Taiwan University</h2>
-					<p>Research Interests Cover Deep Learning, Natural Language and Speech Processing</p>
+		    <h2>Research Assistant, National Taiwan University</h2>
+			<p>My Research Interests are Machine Learning, Natural Language and Speech Processing</p>
+          
           <a href="https://www.linkedin.com/in/yilin-tuan" target="_blank">
             <i class="fab fa-linkedin" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
           </a>
@@ -40,19 +42,22 @@
           <a href="mailto:pascaltuan@gmail.com" target="_blank">
             <i class="fas fa-envelope" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
           </a>
+          <a href="https://scholar.google.com.tw/citations?user=UpEXU6wAAAAJ&hl=zh-TW" target="_blank">
+            <i class="ai ai-google-scholar ai-3x" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
+          </a>
           <!--<a href="Files/CV-20180605.pdf" target="_blank">
             <i class="far fa-file-alt" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
           </a>-->
-				</hgroup>
+		  </hgroup>
 
-				<figure>
-					<img src="Photos/propic-sq.jpg" alt="Yi-Lin Tuan">
-				</figure>
+		  <figure>
+			<img src="Photos/propic-sq.jpg" alt="Yi-Lin Tuan">
+		  </figure>
 		</div>
 	</header>
 	
 	<!-- Contact -->
-	<!-- <section class="contactform clearfix">
+	<!--<section class="contactform clearfix">
 		<div class="container_16">
 			<h3>Contact</h3>
 			<p>Remplissez le formulaire ci-dessous afin de m'envoyer un message. Je vous répondrais dans les plus bref délai. 
@@ -76,10 +81,9 @@
 			<div class="grid_8 Bio">
 				<h3>Biography</h3>
         <p>Yi-Lin Tuan graduated from National Taiwan 
-          University (NTU) in 2017 with a Bachelor's degree in 
-          Electrical Engineering.</p>
-        <p>Tuan is working with <b>Prof. Hung-yi Lee on the research of natural language generation, natural language understanding and knowledge inference</b>, especially via <b>deep learning, reinforcement learning and adversarial learning.</b> He is also working with <b>Prof. Lin-shan Lee on the research of spoken language processin with a focus on lyrics recognition</b>.</p>
-        <p>For more details, you can check my <a href="Files/CV-20180605.pdf" target="_blank">CV/resume</a>. Also if you have any question, please feel free to contact me via email at <a href="mailto:pascaltuan@gmail.com">pascaltuan@gmail.com</a></p>
+          University (NTU) in 2017 with a BSE.</p>
+        <p>Tuan is working with <b>Prof. Hung-yi Lee on the research of natural language generation, natural language understanding and knowledge inference (co-advised by Prof. Yun-Nung Chen)</b>, primarily using <b>deep learning, reinforcement learning and adversarial learning.</b> He also worked with <b>Prof. Lin-shan Lee on the research of spoken language processing with a focus on lyrics recognition</b>.</p>
+        <p>For more details, you can check my <a href="Files/CV_20181224.pdf" target="_blank">CV/resume</a>. If there is any question, please feel free to contact me via email at <a href="mailto:pascaltuan@gmail.com">pascaltuan@gmail.com</a></p>
 			</div>
 			
 			<!-- Competence -->
@@ -97,8 +101,11 @@
             <div class="grid_8 news">
                 <h3>Recent News</h3>
                 <ul class="a">
-                    <li>April 20, 2018. I have presented a <a href="#TsaiTuan2018Lyrics">poster</a> in the ICASSP-2018 <i>(IEEE International Conference on Acoustics, Speech and Signal Processing)</i></li>
-                    <li>January 29, 2018. A paper was accepted in the ICASSP-2018 <i>(IEEE International Conference on Acoustics, Speech and Signal Processing)</i></li>
+                    <li>December 20, 2018. completed English courses - <i>Academic Writing</i> and <i>Advanced Writing(Style)</i> at the Foreign Languages Division the NTU Language Center.</li>
+                    <!--<li>December 18, 2018. completed the English <i>Advanced Writing - Style</i> course at the Foreign Languages Division the NTU Language Center.</li>-->
+                    <li>August 12, 2018. released a github project - <a href="#Tuan2018step">Conditional-Seq-GANs</i></a>.
+                    <li>April 20, 2018. presented a poster in the ICASSP-2018 <i>(IEEE International Conference on Acoustics, Speech and Signal Processing)</i></li>
+                    <li>January 29, 2018. A <a href="#TsaiTuan2018Lyrics">paper</a> was accepted in the ICASSP-2018 <i>(IEEE International Conference on Acoustics, Speech and Signal Processing)</i></li>
                 </ul>
             </div>
     </div>
@@ -107,60 +114,114 @@
 			<div class="grid_16 publication">
 				<h3>Publications</h3>
 				<ul>
-					<li id="Tuan2018step">
-            <h4>
-                <a href="#">Improving Conditional Sequence Generative Adversarial Network by Stepwise Evaluation.</a>
+			    <li id="TsaiTuan2018Lyrics">
+            <p style="margin-bottom:0pt">[SP]</p>
+            <h4 style="margin-top:0pt">
+                Transcribing Lyrics from Commercial Song Audio: the First Step towards Singing Content Processing.
+                <a href="https://arxiv.org/abs/1804.05306" target="_blank"><button class="btn">arxiv</button></a>
+                <a href="Transcribing_Lyrics.html" target="_blank"><button class="btn">demo</button></a>
+            </h4>
+            <h5>Che-Ping Tsai*, Yi-Lin Tuan*, and Lin-shan Lee. (*co-first author)</h5>
+            <h5>Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2018.</h5>
+                </li>
+
+			    <li id="Tuan2018step">
+            <p style="margin-bottom:0pt">[GAN][RL][NLP]</p>
+            <h4 style="margin-top:0pt">
+                Improving Conditional Sequence Generative Adversarial Network by Stepwise Evaluation.
                 <a href="https://arxiv.org/abs/1808.05599" target="_blank"><button class="btn">arxiv</button></a>
+                <a href="https://github.com/Pascalson/Conditional-Seq-GANs" target="_blank"><button class="btn">github</button></a>
             </h4>
             <h5>Yi-Lin Tuan and Hung-Yi Lee.</h5>
-            <h5>arXiv preprint arXiv:1808.05599</h5>
-             
-					</li>
+            <!--<h5>arXiv preprint arXiv:1808.05599.</h5>-->
+            <h5>Under Review in IEEE/ACM Transcation on Audio, Speech, and Language Processing (TASLP).</h5>
+				</li>
 
-					<li id="TuanZhang2018pposeq">
+                <!--<li id="Tuan2018Qadpt">
             <h4>
-                <a href="#">Proximal Policy Optimization and its Dynamic Version for Sequence Generation</a>
+                <a href="#">(How to Generate Dialogues with Dynamic Knowledge Graphs?)</a>
+            </h4>
+            <h5>Yi-Lin Tuan, Yun-Nung Chen, and Hung-Yi Lee.</h5>
+            <h5>Under Review.</h5>
+				</li>-->
+
+			    <!--<li id="Tuan2018Qadpt">
+            <h4>
+                <a href="#">(How Dialogues can be Generated by Different Personalities?)</a>
+            </h4>
+            <h5>Feng-Guang Su*, Aliyah Hsu*, Yi-Lin Tuan, and Hung-Yi Lee.</h5>
+            <h5>Under Review.</h5>
+				</li>-->
+
+				<li id="Chiu2018PRCG">
+            <p style="margin-bottom:0pt">[RL][Robotics]</p>
+            <h4 style="margin-top:0pt">
+                Parallelized Reverse Curriculum Generation
+            </h4>
+            <h5>Zih-Yun Chiu, Yi-Lin Tuan, Hung-yi Lee, and Li-Chen Fu.</h5>
+            <h5>Under Review in the Journal Track of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) , 2019.</h5>
+                </li>
+
+				<li id="TuanZhang2018pposeq">
+            <p style="margin-bottom:0pt">[RL][NLP]</p>
+            <h4 style="margin-top:0pt">
+                Proximal Policy Optimization and its Dynamic Version for Sequence Generation
                 <a href="https://arxiv.org/abs/1808.07982" target="_blank"><button class="btn">arxiv</button></a>
             </h4>
             <h5>Yi-Lin Tuan*, Jinzhi Zhang*, Yujia Li, and Hung-yi Lee. (*co-first author)</h5>
-            <h5>arXiv preprint arXiv:1808.07982</h5>
-            
-					</li>
+            <!--<h5>arXiv preprint arXiv:1808.07982</h5>-->
+            <h5>(currently no submission plan)</h5>
+				</li>
 
-					<li id="TsaiTuan2018Lyrics">
-            <h4>
-                <a href="Transcribing_Lyrics.html">Transcribing Lyrics from Commercial Song Audio: the First Step towards Singing Content Processing.</a>
-                <a href="https://arxiv.org/abs/1804.05306" target="_blank"><button class="btn">arxiv</button></a>
-            </h4>
-            <h5>Che-Ping Tsai*, Yi-Lin Tuan*, and Lin-shan Lee. (*co-first author)</h5>
-            <h5>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2018.</h5>
-             
-					</li>
-
-					<li id="Chiu2018PRCG">
-            <h4>
-                <a href="#">Parallelized Reverse Curriculum Generation</a>
-            </h4>
-            <h5>Zih-Yun Chiu, Yi-Lin Tuan, Hung-yi Lee, and Li-Chen Fu.</h5>
-            <h5>submitted to The Association for the Advancement of Artificial Intelligence (AAAI) , 2019.</h5>
 				</ul>
 			</div>
 		
 			<!-- Experiences -->
 			<div class="grid_16 experience">
-        <h3>Working</h3>
+        <h3>Work Experience</h3>
 				<ul class="a">
 					<li>
 						<h4>Research Assistant</h4>
-            <h5>Speech Processing and Machine Learning Lab, Fall 2017 - present., NTU</h5>
+            <h5>Speech Processing and Machine Learning Lab, NTU, Fall 2017 - present.</h5>
 					</li>
 					<li>
 						<h4>Teaching Assistant</h4>
-            <h5>Machine Learning and Having it Deep and Structured Spring 2017, NTU GICE</h5>
+            <h5>Machine Learning and Having it Deep and Structured, NTU GICE, Spring 2017</h5>
           </li>
 				</ul>
 			</div>
 		
+			<!-- Expériences -->
+			<div class="grid_16 projects">
+			<h3>Term Projects</h3>
+			<ul>
+				<li id="PAPBot">
+                <h4>
+                Piano Accompaniment Robot (PAPBot)
+                <a href="https://drive.google.com/open?id=0B8emQ4_s1cVucDR5VFVmSk5uRzQ" target="_blank"><button class="btn">Demo</button></a>
+                </h4>
+                    <h5>A robot that accompanies singing on piano.</h5>
+                    <h5>The mechanism is build by LEGO EV3 and the techniques include trajectory plannning and query by singing and humming.</h5>
+				</li>
+				<li id="3DMobileProjector">
+                <h4>
+                3D Mobile Projector
+                <a href="https://drive.google.com/open?id=0B8emQ4_s1cVuVWhsdms0Z2VYbEk" target="_blank"><button class="btn">Demo</button></a>
+                </h4>
+                    <h5>A FPGA-based Mobile Projector that real-time projects 3D objects.</h5>
+                    <h5>The hardware is Altera DE2-115 and the techniques include designing efficient pipeline computation and memory storage for real-time manipulation of a 3D object.</h5>
+				</li>
+				<li id="Spitcher">
+                <h4>
+                Pitch-tracking 3D Game (Spitcher; a short name for <b>Spi</b>derman-<b>Pitch</b>)
+                <a href="https://drive.google.com/open?id=1sWnp0KNw6nadm2EmNz7X88gIdwjL_kST" target="_blank"><button class="btn">Demo</button></a>
+                </h4>
+                    <h5>A 3D game played by the pitch of produced sound.</h5>
+                    <h5>The engine of the game is Unity3D and is programed in C#. The main technique is real-time pitch tracking.</h5>
+				</li>
+			</ul>
+			</div>
+
 			<!-- Contact -->
 			<div class="grid_8 contact">
 				<h3>Contact</h3>
