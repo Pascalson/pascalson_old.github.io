@@ -76,7 +76,6 @@ body {
 		  </hgroup>
 		</div>
 	</header>
-
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -89,8 +88,8 @@ body {
     </div>
     <div class="collapse navbar-collapse navbar-collapse-center" id="myNavbar">
     <ul class="nav navbar-nav navbar-center">
-      <li class="active"><a href="#home">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="#">Publications</a></li>
       <li><a href="experience.html">Experience</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -101,38 +100,89 @@ body {
 	
 	<!-- Main -->
 	<section role="main" class="container_16 clearfix">
-        <div id="home" class="tab-pane fade in active">
-		<div class="grid_16">
-			<!-- Biography -->
-			<div class="grid_8 Bio">
-				<h3>Biography</h3>
-                    <p>I'm currently a first year Computer Science PhD student at UC Santa Barbara, advised by <a href="https://sites.cs.ucsb.edu/~william/">professor William Wang</a>. My work is about natural language processing using deep learning.</p>
-                    <p>I received BSE from National Taiwan 
-          University (NTU) in 2017, and worked as a research assistant in NTU from 2017 to July 2019. I was fortunate to work with <a href="http://speech.ee.ntu.edu.tw/~tlkagk/index.html">Prof. Hung-yi Lee<a>, <a href="https://www.csie.ntu.edu.tw/~yvchen/">Prof. Yun-Nung (Vivian) Chen</a>, and <a href="http://speech.ee.ntu.edu.tw/previous_version/lslNew.htm">Prof. Lin-shan Lee.</a></p>
-                    <p>For more details, you can check my <a href="Files/CV_20190823.pdf" target="_blank">CV/resume</a>. If there is any question, please feel free to contact me via email at <a href="mailto:pascaltuan@gmail.com">pascaltuan@gmail.com</a> / <a href="mailto:ytuan@ucsb.edu">ytuan@ucsb.edu</a></p>
-            <br />
-            <br />
-			</div>
-			
-            <!-- News -->
-            <div class="grid_8 news">
-                <h3>Recent News</h3>
-                <ul class="a">
-                    <li>Aug, 2019. My paper <i><a href="publications.html#Tuan2019dykgchat">DyKgChat: Benchmarking Dialogue Generation Grounding on Dynamic Knowledge Graphs</a></i> is accepted in the <i>EMNLP-IJCNLP 2019</i></li>
-                    <li>Jul, 2019. A github project and the dataset are released - <a href="https://github.com/jackyyy0228/Lyric_ASR">LyricsASR</a> and <a href="https://github.com/Pascalson/vocaldata">vocaldata</a>.
-                    <li>Jun, 2019. My paper <i><a href="publications.html#SuHsu2019person">Personalized Dialogue Response Generation Learned from Monologues</a></i> is accepted in the <i>Interspeech 2019</i></li>
-                    <!--<li>December 20, 2018. completed English courses - <i>Academic Writing</i> and <i>Advanced Writing(Style)</i> at the Foreign Languages Division the NTU Language Center.</li>-->
-                    <li>Jan, 2019. My paper <i><a href="publications.html#Tuan2018step">Improving Conditional Sequence Generative Adversarial Network by Stepwise Evaluation.</a></i> is accepted in the <i>IEEE/ACM Transaction on Audio, Speech, and Language Processing.</i> </li>
-                    <!--<li>December 20, 2018. completed English courses - <i>Academic Writing</i> and <i>Advanced Writing(Style)</i> at the Foreign Languages Division the NTU Language Center.</li>-->
-                    <!--<li>December 18, 2018. completed the English <i>Advanced Writing - Style</i> course at the Foreign Languages Division the NTU Language Center.</li>-->
-                    <li>Aug, 2018. A github project is released - <a href="https://github.com/Pascalson/Conditional-Seq-GANs">Conditional-Seq-GANs</a>.
-                    <!--<li>April 20, 2018. presented a poster in the ICASSP-2018 <i>(IEEE International Conference on Acoustics, Speech and Signal Processing)</i></li>-->
-                    <li>Jan, 2018. My paper <i><a href="publications.html#TsaiTuan2018Lyrics">Transcribing Lyrics from Commercial Song Audio: the First Step towards Singing Content Processing.</a></i> is accepted in the <i>ICASSP 2018</i></li>
-                </ul>
-            <br />
-            <br />
-            </div>
+		<!-- Publications -->
+		<div class="grid_16 publication">
+		<h3>Journal</h3><ul class="a">
+
+		    <li id="Tuan2018step" name="Tuan2018step">
+                <!--<p style="margin-bottom:0pt">[GAN][RL][NLP]</p>-->
+                <h4 style="margin-top:0pt">
+                    Improving Conditional Sequence Generative Adversarial Network by Stepwise Evaluation.
+                </h4>
+                <h5>Yi-Lin Tuan and Hung-Yi Lee.</h5>
+                <h5>IEEE/ACM Transaction on Audio, Speech, and Language Processing (TASLP), 2019.</h5>
+                <h5>
+                    <a href="https://arxiv.org/abs/1808.05599" target="_blank"><button class="btn">arxiv</button></a>
+                    <a href="https://github.com/Pascalson/Conditional-Seq-GANs" target="_blank"><button class="btn">github</button></a>
+                </h5>
+			</li>
+
+			<!--<li id="Chiu2018PRCG">
+                <p style="margin-bottom:0pt">[RL][Robotics]</p>
+                <h4 style="margin-top:0pt">
+                    Parallelized Reverse Curriculum Generation
+                </h4>
+                <h5>Zih-Yun Chiu, Yi-Lin Tuan, Hung-yi Lee, and Li-Chen Fu.</h5>
+                <h5>Under Review in the Journal Track of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) , 2019.</h5>
+            </li>-->
+
+			</ul>
+        <br />
+        <br />
+		</div>
+
+		<div class="grid_16 publication">
+		<h3>Conference</h3><ul class="a">
+            <li id="Tuan2019dykgchat">
+                <h4 style="margin-top:0pt">
+                    DyKgChat: Benchmarking Dialogue Generation Grounding on Dynamic Knowledge Graphs
+                </h4>
+                <h5>Yi-Lin Tuan, Yun-Nung Chen, and Hung-Yi Lee.</h5>
+                <h5>Accepted by EMNLP 2019.</h5>
+			</li>
+
+		    <li id="SuHsu2019person">
+                <h4 style="margin-top:0pt">
+                    Personalized Dialogue Response Generation Learned from Monologues
+                </h4>
+                <h5>Feng-Guang Su*, Aliyah Hsu*, Yi-Lin Tuan, and Hung-Yi Lee.</h5>
+                <h5>Accepted by Interspeech 2019</h5>
+			</li>
+		    <li id="TsaiTuan2018Lyrics">
+                <!--<p style="margin-bottom:0pt">[SP]</p>-->
+                <h4 style="margin-top:0pt">
+                    Transcribing Lyrics from Commercial Song Audio: the First Step towards Singing Content Processing.
+                </h4>
+                <h5>Che-Ping Tsai*, Yi-Lin Tuan*, and Lin-shan Lee. (*co-first author)</h5>
+                <h5>Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2018.</h5>
+                <h5>
+                    <a href="https://arxiv.org/abs/1804.05306" target="_blank"><button class="btn">arxiv</button></a>
+                    <a href="Transcribing_Lyrics.html" target="_blank"><button class="btn">demo</button></a>
+                    <a href="https://github.com/Pascalson/vocaldata" target="_blank"><button class="btn">github</button></a>
+                </h5>
+            </li>
+	    </ul>
+        <br />
+        <br />
         </div>
+
+		<div class="grid_16 publication">
+		<h3>Preprint</h3><ul class="a">
+			<li id="TuanZhang2018pposeq">
+                <!--<p style="margin-bottom:0pt">[RL][NLP]</p>-->
+                <h4 style="margin-top:0pt">
+                    Proximal Policy Optimization and its Dynamic Version for Sequence Generation
+                </h4>
+                <h5>Yi-Lin Tuan*, Jinzhi Zhang*, Yujia Li, and Hung-yi Lee. (*co-first author)</h5>
+                <h5>arXiv preprint arXiv:1808.07982</h5>
+                <!--<h5>(currently no submission plan)</h5>-->
+                <h5>
+                    <a href="https://arxiv.org/abs/1808.07982" target="_blank"><button class="btn">arxiv</button></a>
+                </h5>
+			</li>
+	    </ul>
+        <br />
+        <br />
         </div>
 
 	</section>
