@@ -84,6 +84,7 @@
 	}
 	
 	header figure img {
+        object-fit: cover;
 		border: 3px solid #eee;
 		border-radius: 85px;
 		height: 170px;
