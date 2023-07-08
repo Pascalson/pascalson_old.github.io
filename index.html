@@ -1,203 +1,256 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V96QD2SMR6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en-us">
 
-  gtag('config', 'G-V96QD2SMR6');
-</script>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
 
-<title>Yi-Lin Tuan</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V96QD2SMR6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V96QD2SMR6');
+    </script>
 
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Fichiers CSS -->
-<link rel="stylesheet" href="Assets/reset.css">
-<!--[if lt IE 9]> 
-	<link rel="stylesheet" href="css/cv.css" media="screen">
-<![endif]-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<!--<link rel="stylesheet" media="screen and (max-width:480px)" href="Assets/mobile.css">
-<link rel="stylesheet" media="screen and (min-width:481px)" href="Assets/cv.css">-->
-<link rel="stylesheet" media="screen and (max-width:960px)" href="Assets/mobile.css">
-<link rel="stylesheet" media="screen and (min-width:961px)" href="Assets/cv.css">
-<link rel="stylesheet" media="print" href="Assets/print.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<style type="text/css">
-.navbar-center {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
+    <title>Yi-Lin Tuan</title>
 
-.navbar-collapse-center {
-  text-align: center;
-}
-body {
-    font-family: Helvetica,"Lucida Grande",Arial,Verdana,sans-serif;
-    font-size: 18px;
-}
-</style>
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="Assets/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen and (max-width:960px)" href="Assets/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width:961px)" href="Assets/cv.css">
+    <link rel="stylesheet" media="print" href="Assets/print.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#home_href").click(function(e){
+                e.preventDefault();
+                $("#main_content").load("home.html", function(response, status) {
+                /*$("#main_content").load(document.getElementById("main_content"), function(response, status) {*/
+                });
+            });
+            
+            $("#publications_href").click(function(e){
+                e.preventDefault();
+                $("#main_content").load("publications.html", function(response, status) {
+                    /* for debug */
+                    /*if(status === 'error') {
+                        alert("Failed to load publications.html");
+                    }
+                    else {
+                        alert("Success!");
+                    }*/
+                });
+            });
+
+            $("#misc_href").click(function(e){
+                e.preventDefault();
+                $("#main_content").load("misc.html", function(response, status) {
+                });
+            });
+        });
+
+        /*
+        function ToggleDarkMode() {
+           document.body.classList.toggle("dark-mode");
+           document.getElementsById('header').toggle("dark-mode");
+        }
+        */
+    </script>
+
+
+    <style type="text/css">
+
+    .navbar-center {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
+
+    .navbar-collapse-center {
+      text-align: center;
+    }
+
+    body {
+        font-family: Helvetica,"Lucida Grande",Arial,Verdana,sans-serif;
+        font-size: 18px;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+
+    table td, table td * {
+        vertical-align: top;
+    }
+
+    table td {
+        padding: 10px;
+    }
+    
+    ol {
+        list-style-type: decimal;
+    }
+
+    li {
+        font-size: 18px;
+        margin-left: 18px;
+        margin-bottom: 10px;
+    }
+
+    </style>
+
+
 </head>
+
 
 <body>
 
+    <!--<button onclick="ToggleDarkMode()">Toggle dark mode</button>-->
 	<!-- Header -->
 	<header role="banner">
-		<div class="container_16">
-          <div class="navbar-collapse-center">
-		  <figure>
-			<img src="Photos/stand.jpg" alt="Yi-Lin Tuan">
-		  </figure>
-          </div>
-		  <hgroup>
-          <h1>Yi-Lin Tuan</h1>
-		    <h2>Computer Science PhD candidate, UC Santa Barbara</h2>
-			<p>works on natural language processing and deep learning</p>
-          
-          <a href="https://scholar.google.com.tw/citations?user=UpEXU6wAAAAJ&hl=zh-TW" target="_blank">
-            <i class="ai ai-google-scholar ai-3x" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
-          </a>
-          <a href="https://github.com/Pascalson" target="_blank">
-            <i class="fab fa-github" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
-          </a>
-          <a href="https://twitter.com/pascaltuan" target="_blank">
-            <i class="fab fa-twitter" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yilin-tuan" target="_blank">
-            <i class="fab fa-linkedin" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
-          </a>
-          <!--<a href="mailto:pascaltuan@gmail.com" target="_blank">
-            <i class="fas fa-envelope" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
-          </a>-->
-          <!--<a href="Files/CV-20180605.pdf" target="_blank">
-            <i class="far fa-file-alt" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
-          </a>-->
-		  </hgroup>
-		</div>
+        <dir id="header">
+            <div class="container_16">
+            
+            <div class="navbar-collapse-center">
+                <figure>
+                    <img src="Photos/stand.jpg" alt="Yi-Lin Tuan">
+                </figure>
+            </div>
+            
+            <hgroup>
+                <h1>Yi-Lin (Pascal) Tuan</h1>
+                <h2>Computer Science PhD candidate, UC Santa Barbara</h2>
+                <p>working on machine learning and natural language generation</p>
+
+                  
+                <a href="https://scholar.google.com.tw/citations?user=UpEXU6wAAAAJ&hl=zh-TW" target="_blank">
+                    <i class="ai ai-google-scholar ai-3x" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
+                </a>
+                <a href="https://github.com/Pascalson" target="_blank">
+                    <i class="fab fa-github" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
+                </a>
+                <a href="https://twitter.com/pascaltuan" target="_blank">
+                    <i class="fab fa-twitter" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yilin-tuan" target="_blank">
+                    <i class="fab fa-linkedin" style="font-size:36px;color:gray" onMouseOver="this.style.color='#0489B1'" onMouseOut="this.style.color='gray'"></i>
+                </a>
+            </hgroup>
+            
+            </div>
+        </div>
 	</header>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
-    </div>
-    <div class="collapse navbar-collapse navbar-collapse-center" id="myNavbar">
-    <ul class="nav navbar-nav navbar-center">
-      <li class="active"><a href="#home">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="misc.html">Misc</a></li>
-    </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-default">
+        <div id="header-nav">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-collapse-center" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+              <li><a href="" id="home_href">Home</a></li>
+              <li><a href="" id="publications_href">Publications</a></li>
+              <li><a href="" id="misc_href">Misc</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
 
 	
 	<!-- Main -->
-	<section role="main" class="container_16 clearfix">
-        <div id="home" class="tab-pane fade in active">
-		<div class="grid_16">
-			<!-- Biography -->
-				<h3>About me</h3>
-                    <p>I'm a computer science PhD candidate at University of California, Santa Barbara, advised by <a href="https://sites.cs.ucsb.edu/~william/">Prof. William Wang</a>. Before joining UCSB, I graduated from the Electrical Engineering department in National Taiwan University (NTU) in 2017, and worked as a research assistant in NTU util 2019. I was fortunate to work with <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php">Prof. Hung-yi Lee<a>, <a href="https://www.csie.ntu.edu.tw/~yvchen/">Prof. Yun-Nung (Vivian) Chen</a>, and <a href="http://speech.ee.ntu.edu.tw/previous_version/lslNew.htm">Prof. Lin-shan Lee.</a> on natural language and speech processing.</p>
-                    <p>My research interests particulary lie in dialogue generation, generative adversarial networks, and reinforcement learning. I persue to develop theoretically sound novel things and incorporate ideas from physics, linguistics and psychology.</p>
-                    <p>For more details, check my <a href="Files/CV_20221012.pdf" target="_blank">CV</a>. If any question raises, feel free to contact me via email at ``ytuan at ucsb dot edu''</p>
-            <br />
-            <br />
-        </div>
+    <div id="main_content">
+        <section role="main" class="container_16 clearfix">
+            <div id="home" class="tab-pane fade in active">
+                <!-- Biography -->
+                <div class="grid_16">
+                    <h3>About me</h3>
+                    <p>My research interests are about machine learning and natural language generation. Recently, I'm working on:</p>
+                    <ul class='a' style="list-style-type:disc;">
+                        <li>Trustful and creative text generation [2,3,5,6,7,9,12,13,16]</li>
+                        <li>Viewing text/vision in a Physics atomic world [18]</li>
+                        <li>Reinforcement learning utilities [2,3,4,17]</li>
+                    </ul>
+                    <p>I'm currently a computer science PhD candidate at University of California, Santa Barbara (UCSB), working with professor <a href="https://sites.cs.ucsb.edu/~william/">William Yang Wang</a>. Before joining UCSB, I received BS degree in Electrical Engineering from National Taiwan University, where I worked with professor <a href="http://speech.ee.ntu.edu.tw/previous_version/lslNew.htm">Lin-shan Lee</a> on speech processing, professor <a href="https://speech.ee.ntu.edu.tw/~hylee/index.php">Hung-yi Lee</a> on generative adversarial nets and reinforcement learning on sequence generation, and professor <a href="https://www.csie.ntu.edu.tw/~yvchen/">Yun-Nung (Vivian) Chen</a> on conversational AI.</p>
+                    <p>I am interning/interned at Meta (Facebook) AI at 2023 (host by <a href="https://scholar.google.com/citations?user=St5gv-4AAAAJ&hl=en">Dan Bikel</a>), 2022 (host by <a href="https://xwhan.github.io/">Wenhan Xiong</a> and <a href="https://scholar.google.com/citations?user=hFKgapkAAAAJ&hl=en">Yashar Mehdad</a>) and 2020 (host by <a href="https://ahelk.github.io/">Ahmed El-Kishky</a> and <a href="https://guzmanhe.github.io/">Paco Guzmán</a>), and Amazon Alexa AI (host by <a href="https://scholar.google.com/citations?user=_ZSfAa4AAAAJ&hl=en">Sajjad Beygi</a> and <a href="https://www.maryamfazel.com/">Marriam Fazel-Zarandi]</a>) at 2021.</p>
+                    <p>More details are in my <a href="Files/CV_20230708.pdf" target="_blank">CV</a>. If any question raises, feel free to contact me via email at ``ytuan at ucsb dot edu''</p>
+                    <br />
+                    <br />
+                </div>
 
-        <!-- Awards -->
-		<div class="grid_16 experience">
-        <h3>Awards</h3>
-		<ul class="a">
-            <li>
-                <h4>Best Poster Award in ACM Augmented Humans 2022</h4>
-            </li>
-            <li>
-                <h4>Best Paper Award in SoCalNLP 2019</h4>
-            </li>
-			<li>
-                <h4>Altera Outstanding Achievement Award of Innovate Asia Design Contest, 2016</h5>
-            </li>
-			<li>
-			    <h4>NTU Electrical Engineering 1960 Alumni Scholarship, 2014 and 2016</h5>
-			</li>
-			<li>
-			    <h4>Presidential Award rank 1/169, NTU Electrical Engineering, 2014</h4>
-			</li>
-		</ul>
-        <br />
-        <br />
-		</div>
-		<!-- Experiences -->
-		<div class="grid_16 experience">
-        <h3>Work Experiences</h3>
-		<ul class="a">
-			<li>
-			    <h4>Research Intern at Meta, Summer 2022</h4>
-			</li>
-			<li>
-			    <h4>Applied Scientist Intern at Amazon Alexa, Summer 2021</h4>
-			</li>
-			<li>
-			    <h4>Research Intern at Facebook AI, Summer 2020</h4>
-			</li>
-			<li>
-			    <h4>Research Assistant at NTU, Fall 2017 - Summer 2019</h5>
-			</li>
-			<!--<li>
-				<h4>Teaching Assistant in NTU CommE5045 and EE4049, Spring 2017</h5>
-            </li>-->
-		</ul>
-        <br />
-        <br />
-		</div>
-			
-            <!-- News -->
-            <!--<div class="grid_8 news">
-                <h3>Recent News</h3>
-                <ul class="a">
-                    <li>Will appear at EACL2021</li>
-                    <li>Oct, 2019. Release code and dataset of <a href="https://github.com/Pascalson/DyKGChat">DyKGChat</a>.</li>
-                    <li>Sep, 2019. The extend abstract <i>"Dynamic Knowledge-Grounded Dialogue Generation through Walking on the Graph"</i> of <i><a href="publications.html#Tuan2019dykgchat">DyKgChat</a></i> received <b>Best Paper Award, SoCalNLP19</b></li>
-                    <li>Aug, 2019. My paper <i><a href="publications.html#Tuan2019dykgchat">DyKgChat: Benchmarking Dialogue Generation Grounding on Dynamic Knowledge Graphs</a></i> is accepted in <i>EMNLP-IJCNLP 2019</i></li>
-                    <li>Jul, 2019. Release code and dataset about <b>lyrics recognition</b> on <a href="https://github.com/jackyyy0228/Lyric_ASR">LyricsASR</a> and <a href="https://github.com/Pascalson/vocaldata">vocaldata</a>.
-                    <li>Jun, 2019. My paper <i><a href="publications.html#SuHsu2019person">Personalized Dialogue Response Generation Learned from Monologues</a></i> is accepted in <i>Interspeech 2019</i></li>
-                    <li>Jan, 2019. My paper <i><a href="publications.html#Tuan2018step">Improving Conditional Sequence Generative Adversarial Network by Stepwise Evaluation.</a></i> is accepted in <i>IEEE/ACM Transaction on Audio, Speech, and Language Processing.</i> </li>
-                    <li>Aug, 2018. Release a collective implementation of conditional sequence GANs and proposed <a href="publications.html#Tuan2018step">StepGAN</a> on <a href="https://github.com/Pascalson/Conditional-Seq-GANs">Conditional-Seq-GANs</a>.
-                    <li>Jan, 2018. My paper <i><a href="publications.html#TsaiTuan2018Lyrics">Transcribing Lyrics from Commercial Song Audio: the First Step towards Singing Content Processing.</a></i> is accepted in the <i>ICASSP 2018</i></li>
+                <!-- Awards -->
+                <div class="grid_16 experience">
+                    <h3>Honors</h3>
+                    <ul class="a" style="list-style-type:disc;">
+                        <li>
+                            <h4>Best Poster Award in ACM Augmented Humans 2022</h4>
+                        </li>
+                        <li>
+                            <h4>Best Paper Award in SoCalNLP 2019</h4>
+                        </li>
+                        <li>
+                            <h4>Altera Outstanding Achievement Award of Innovate Asia Design Contest, 2016</h5>
+                        </li>
+                        <li>
+                            <h4>NTU Electrical Engineering 1960 Alumni Scholarship, 2014 and 2016</h5>
+                        </li>
+                        <li>
+                            <h4>Presidential Award rank 1/169, NTU Electrical Engineering, 2014</h4>
+                        </li>
+                    </ul>
+                    <br />
+                    <br />
+                </div>
+
+                <!-- Experiences -->
+                <div class="grid_16 experience">
+                <h3>Work Experiences</h3>
+                <ul class="a" style="list-style-type:disc;">
+                    <li>
+                        <h4>Research Intern at Meta, New York, NY, Summer 2023</h4>
+                    </li>
+                    <li>
+                        <h4>Research Intern at Meta, Menlo Park, CA, Summer 2022</h4>
+                    </li>
+                    <li>
+                        <h4>Teaching Assistant at UCSB CS190I, Winter 2022</h5>
+                    </li>
+                    <li>
+                        <h4>Applied Scientist Intern at Amazon Alexa AI, Boston, MA (Virtual), Summer 2021</h4>
+                    </li>
+                    <li>
+                        <h4>Research Intern at Facebook AI, Menlo Park, CA (Virtual), Summer 2020</h4>
+                    </li>
+                    <li>
+                        <h4>Research Assistant at NTU, Fall 2017 - Summer 2019</h5>
+                    </li>
+                    <li>
+                        <h4>Teaching Assistant at NTU CommE5045 and EE4049, Spring 2017</h5>
+                    </li>
                 </ul>
-            <br />
-            <br />
-            </div>-->
-        </div>
-        </div>
+                <br />
+                <br />
+                </div>
+            </div>
+        </section>
+    </div>
 
-	</section>
-
-<!-- Scripts JavaScript -->
-<script src="Sheldon%20COOPER%20-%20Physicien%20surdou%C3%A9%20et%20Geek%20qualifi%C3%A9_files/jquery-1.js"></script>
-<script src="Sheldon%20COOPER%20-%20Physicien%20surdou%C3%A9%20et%20Geek%20qualifi%C3%A9_files/validate.js"></script>
-<!--[if lt IE 9]>
-<script src="scripts/placeholder.js"></script>
-<![endif]-->
-<script src="Sheldon%20COOPER%20-%20Physicien%20surdou%C3%A9%20et%20Geek%20qualifi%C3%A9_files/plugins.js"></script>
-
-</body></html>
+</body>
+</html>
