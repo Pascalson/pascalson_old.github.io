@@ -1,0 +1,20 @@
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Intern
+      institution: Meta AI, Menlo Park, US
+      year: Summer 2022
+      description:
+        - Host by Wenhan Xiong
+
+    - title: Applied Scientist Intern
+      institution: Amazon Alexa AI, Boston, US (Virtual)
+      year: Summer 2021
+      description:
+        - Host by Sajjad Beygi
+
+    - title: Research Intern
+      institution: Facebook AI, Menlo Park, US (Virtual)
+      year: Summer 2020
+      description:
+        - Host by Ahmed El-Kishky
